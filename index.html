@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Tools Dashboard</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #f0f0f0;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 2rem;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    select {
+      padding: 0.5rem;
+      background-color: #1f1f1f;
+      color: #f0f0f0;
+      border: 1px solid #444;
+      border-radius: 5px;
+    }
+    .tool-list {
+      margin-top: 2rem;
+    }
+    .tool-link {
+      display: block;
+      margin: 0.5rem;
+      color: #90caf9;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>🛠️ AI Tools Hub</h1>
+  <label for="tool-menu">Select a Tool:</label>
+  <select id="tool-menu" onchange="openTool(this.value)">
+    <option value="">-- Choose --</option>
+    <option value="https://example.com/cleanup">Cleanup</option>
+    <option value="https://example.com/upscaler">Image Upscaler</option>
+    <option value="https://example.com/relight">Relight</option>
+    <option value="https://example.com/remove-bg">Remove Background</option>
+    <option value="https://example.com/replace-bg">Replace Background</option>
+    <option value="https://example.com/reimagine">Reimagine</option>
+    <option value="https://example.com/generative-fill">Generative Fill</option>
+    <option value="https://example.com/text-to-image">Text to Image</option>
+    <option value="https://example.com/text-remover">Text Remover</option>
+    <option value="https://example.com/uncrop">Uncrop</option>
+    <option value="https://example.com/resizer">Universal Resizer</option>
+    <option value="https://example.com/text-gen">Text Generator</option>
+  </select>
+
+  <script>
+    function openTool(link) {
+      if (link) window.open(link, '_blank');
+    }
+  </script>
+</body>
+</html>
